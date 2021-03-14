@@ -1,0 +1,81 @@
+<video id="myVideo" src="assets/videos/projects3.mp4" style="margin: 0;  display: flex; z-index: -10; position: fixed;
+left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
+
+
+
+<div class="row" (window:resize)="onResize($event)">
+
+  <div class="col-lg-6 col-sm-12 col-md-12">
+
+
+
+    <div class="bodP">
+      <h1>
+        MY WORKS</h1>
+    </div>
+
+
+
+    <!--         <img src="assets/images/projects.jpg" [style.position]="image1position" class="img-fluid image1" alt="" style="height: 100vh;
+              left: 0; top: 0px;   filter: grayscale(0%);   "> -->
+
+  </div>
+
+  <div class="col-lg-6 col-sm-12 col-md-12 skills" style="top: 0px; height: 100vh; position: relative; ">
+    <div class="container"
+      style="top: 0px; padding: 120px 20px 40px 20px ; position: absolute;  height: auto; background-color:rgba(0,0,0,.5); min-height: 100vh; ">
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <h4 style=" color: white; padding-bottom: 20px;  margin: auto;  padding-left:20px ;">Desktop Applications</h4>
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="10">
+        <div fxFlex="48%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+          *ngFor="let p of Projects; let i = index">
+          <!-- -------------------------------------------------------- -->
+          <div class="card" *ngIf="p.type=== 'desktop'" >
+            <img [src]="p.imageLink[0]" alt="">
+            <div class="descriptions">
+              <h5>{{p.Name}} ({{p.period}})</h5>
+              <p>
+                {{p.description}}
+ 
+              </p>
+
+              <button type="button" class="btn btn-dark" (click)="openProject(p.id)" >Detail</button>
+
+            </div>
+          </div>
+          <!-- -------------------------------------------------------- -->
+        </div>
+      </div>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  padding-left:20px ;">Web Applications</h4>
+            <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="10">
+              <div fxFlex="48%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+                *ngFor="let p of Projects; let i = index">
+                <!-- -------------------------------------------------------- -->
+                <div class="card" *ngIf="p.type=== 'web'">
+                  <img [src]="p.imageLink[0]" alt="">
+                  <div class="descriptions">
+                    <h5>{{p.Name}} ({{p.period}})</h5>
+                    <p>
+                      {{p.description}}
+                    </p>
+                    <a [href]="p.link" target="_blank" *ngIf="p.link!='none'" >Source Code</a> <br>
+
+                    <button type="button" class="btn btn-dark" (click)="openProject(p.id)" >Detail</button>
+                  </div>
+                </div>
+                <!-- -------------------------------------------------------- -->
+              </div>
+            </div>
+
+
+
+
+
+    </div>
+    <!-------------- Container   ----------------------------------------------------------------------------------------------------->
+    
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+</div>

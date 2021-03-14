@@ -1,0 +1,129 @@
+<video id="myVideo" src="assets/videos/aboutme2.mp4" style="margin: 0;  display: flex; z-index: -10; position: fixed;
+left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
+
+
+
+<div class="row" (window:resize)="onResize($event)" (mousedown)="staticiamge() " (mouseup)="fixedimage()">
+
+  <div class="col-lg-6 col-sm-12 col-md-12" >
+
+
+
+<div class="bod" >
+    <h1 >
+     MY SKILLS</h1>
+    </div>     
+
+
+
+    <!--         <img src="assets/images/projects.jpg" [style.position]="image1position" class="img-fluid image1" alt="" style="height: 100vh;
+              left: 0; top: 0px;   filter: grayscale(0%);   "> -->
+
+  </div>
+
+  <div class="col-lg-6 col-sm-12 col-md-12 skills" style="top: 0px; height: 100vh; position: relative; ">
+    <div class="container"
+      style="top: 0px; padding: 120px 20px 40px 20px ; position: absolute;  height: auto; background-color:rgba(0,0,0,.5); ">
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <h4 style=" color: white; padding-bottom: 20px;  margin: auto;  padding-left:20px ;">Desktop Technologies</h4>
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
+        [@listAnimation]="Desktopskills.length">
+        <div fxFlex.gt-lg="50%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+          *ngFor="let skill of Desktopskills; let i = index">
+          <div class="skill-card" style=" margin: auto;">
+            <header class="skill-card__header" [ngClass]="skill.color">
+              <article class="badge skill-card__icon" [ngClass]="skill.color">
+                <div class="rounded">
+
+                  <i class="fab " *ngIf="isImage(skill.class)" [ngClass]="skill.class"></i>
+                  <img class="img-fluid fab " *ngIf="!isImage(skill.class)" style="width: 80%; height: 80%; margin:10%;"
+                    [src]="skill.imageLink">
+                </div>
+              </article>
+            </header>
+            <section class="skill-card__body">
+              <h2 class="skill-card__title">{{skill.technologieName}}</h2><span
+                class="skill-card__duration">{{skill.years}} years of experience
+              </span>
+              <div class="skill-card__knowledge">
+                {{skill.comment}}
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  padding-left:20px ;">Web
+        Technologies</h4>
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
+        [@listAnimation]="Webskills.length">
+        <div fxFlex.gt-lg="30%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+          *ngFor="let skill of Webskills; let i = index">
+          <div class="skill-card" style=" margin: auto;">
+            <header class="skill-card__header" [ngClass]="skill.color">
+              <article class="badge skill-card__icon" [ngClass]="skill.color">
+                <div class="rounded">
+                  <i class="fab " *ngIf="isImage(skill.class)" [ngClass]="skill.class"></i>
+                  <img class="img-fluid fab " *ngIf="!isImage(skill.class)" style="width: 80%; height: 80%; margin:10%;"
+                    [src]="skill.imageLink">
+
+                </div>
+              </article>
+            </header>
+            <section class="skill-card__body">
+              <h2 class="skill-card__title">{{skill.technologieName}}</h2><span
+                class="skill-card__duration">{{skill.years}}
+                years of experience
+              </span>
+              <div class="skill-card__knowledge">
+                {{skill.comment}}
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  padding-left:20px ;">Database
+        Technologies</h4>
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
+        [@listAnimation]="Databaseskills.length">
+        <div fxFlex.gt-lg="30%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+          *ngFor="let skill of Databaseskills; let i = index">
+          <div class="skill-card" style=" margin: auto;">
+            <header class="skill-card__header" [ngClass]="skill.color">
+              <article class="badge skill-card__icon" [ngClass]="skill.color">
+                <div class="rounded">
+
+                  <i class="fab " *ngIf="isImage(skill.class)" [ngClass]="skill.class"></i>
+                  <img class="img-fluid fab " *ngIf="!isImage(skill.class)" style="width: 80%; height: 80%; margin:10%;"
+                    [src]="skill.imageLink">
+                </div>
+              </article>
+            </header>
+            <section class="skill-card__body">
+              <h2 class="skill-card__title">{{skill.technologieName}}</h2><span
+                class="skill-card__duration">{{skill.years}} years of experience
+              </span>
+              <div class="skill-card__knowledge">
+                {{skill.comment}}
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+
+
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+</div>
