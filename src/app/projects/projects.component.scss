@@ -191,12 +191,12 @@ opacity: 0.8;
     font-size: calc(36px + 4vw);
     font-weight: 900;
   
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glowworks 2s ease-in-out infinite alternate;
     text-align: center;
   }
 
   
-  @keyframes glow {
+  @keyframes glowworks {
     from {
       text-shadow: 0 0 10px #47cad3;
     }

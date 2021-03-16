@@ -13,32 +13,27 @@
 .about{
 
   color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-  display: grid;
+
 
   width: 90%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+
   align-items: center;
   justify-items: center;
 
   h1,p {
-    margin: 0;
-    padding-bottom: 6rem;
-    grid-column: 1;
-    grid-row: 1;
-    z-index: 1;
+
+
 
     font-family: 'Teko', sans-serif;
     font-size: calc(36px + 4vw);
     font-weight: 900;
   
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glowabout 2s ease-in-out infinite alternate;
     text-align: center;
   }
  
   
-  @keyframes glow {
+  @keyframes glowabout {
     from {
       text-shadow: 0 0 10px #2cb6af;
     }
@@ -55,16 +50,16 @@
 	}
 	
 	.photo{
-	  position: absolute;
-	  top: 45%;
-	  left: 50%;
+	  position: relative;
+	  top: 0%;
+	  left: 0%;
 	  width: 70%;
 	  min-height: 400px;
 	  min-width: 400px;
 	  height: 70%;
-	  transform: translate(-50%, -50%);
+	
 	  display: block;
-	  margin-bottom: 10%;
+
 	}
 	
 	.photo img{
@@ -90,7 +85,7 @@
 	  height: 80%;
 	  top: 10%;
 	  left: 15%;
-	  margin: auto;
+	  padding: 20px;
 	  border-radius: 50%;
 	}
 	
@@ -113,7 +108,9 @@
 	
 	.photo:hover img,
 	.photo:hover .glow-wrap{
-	  margin-top: 0;
+	  margin-top: 0%;
+      width: 69%;       
+
 	}
 	
 	h1{
@@ -220,18 +217,19 @@
 	
   
   .bodd {
-	place-items: center;
+
  
 	margin: 0;
-	padding: 20px;
+
+	height: 100%;
 	min-height: 100vh;
-	display: flex;
+
 	justify-content: center;
 	align-items: center;   
 	font-family: sans-serif;
   
-	padding: 120px 20px 120px 20px ;  
-	 height: auto;
+	padding: 100px 20px 20px 20px ;  
+
   
   position: relative;
 	  width: 100%;

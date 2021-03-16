@@ -23,13 +23,13 @@ left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
 
   <div class="col-lg-6 col-sm-12 col-md-12 skills" style="top: 0px; height: 100vh; position: relative; ">
     <div class="container"
-      style="top: 0px; padding: 120px 20px 40px 20px ; position: absolute;  height: auto; background-color:rgba(0,0,0,.5); ">
+      style="top: 0px; padding: 120px 20px 40px 20px ; position: absolute; width: auto; height: auto; background-color:rgba(0,0,0,.5); ">
       <!--------------------------------------------------------------------------------------------------------------------------->
       <h4 style=" color: white; padding-bottom: 20px;  margin: auto;  padding-left:20px ;">Desktop Technologies</h4>
-      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; margin: 10%; "
         [@listAnimation]="Desktopskills.length">
-        <div fxFlex.gt-lg="50%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
-          *ngFor="let skill of Desktopskills; let i = index">
+        <div fxFlex.gt-lg="33%"  fxFlex.md="50%" fxFlex.sm="100%" fxFlex.xs="100%"
+          *ngFor="let skill of Desktopskills; let i = index" >
           <div class="skill-card" style=" margin: auto;">
             <header class="skill-card__header" [ngClass]="skill.color">
               <article class="badge skill-card__icon" [ngClass]="skill.color">
@@ -54,11 +54,11 @@ left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
       </div>
 
       <!--------------------------------------------------------------------------------------------------------------------------->
-      <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  padding-left:20px ;">Web
+      <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  left:20px ;">Web
         Technologies</h4>
-      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; margin: 10%; "
         [@listAnimation]="Webskills.length">
-        <div fxFlex.gt-lg="30%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+        <div fxFlex.gt-lg="33%"  fxFlex.md="50%" fxFlex.sm="90%" fxFlex.xs="90%"
           *ngFor="let skill of Webskills; let i = index">
           <div class="skill-card" style=" margin: auto;">
             <header class="skill-card__header" [ngClass]="skill.color">
@@ -89,7 +89,7 @@ left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
         Technologies</h4>
       <div fxLayout="row wrap" fxLayoutGap="20px grid" style="position: relative; align-content: center; "
         [@listAnimation]="Databaseskills.length">
-        <div fxFlex.gt-lg="30%" fxFlex.lg="33%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
+        <div fxFlex.gt-lg="33%"  fxFlex.md="50%" fxFlex.sm="90%" fxFlex.xs="90%"
           *ngFor="let skill of Databaseskills; let i = index">
           <div class="skill-card" style=" margin: auto;">
             <header class="skill-card__header" [ngClass]="skill.color">

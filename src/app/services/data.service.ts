@@ -14,7 +14,7 @@ export class DataService {
       technologieName: 'C language',
       years: 3,
       imageLink: 'assets/images/c-programming.png',
-      comment:'Operating systeme(Linux): kernel, process management, memory management,video memory, driver',
+      comment:'Operating systeme(Linux): kernel, process management, memory management,video memory, drivers',
       class:'none',
       color:'bluec'
     },
@@ -30,7 +30,7 @@ export class DataService {
       technologieName: 'C++',
       years: 6,
       imageLink: 'assets/images/C++icon.png',
-      comment:'Desktop application with Embarcadero Rad Studio: UI design and programing (DevExpress), Fire Base , Reporting(Fast-report VCL)',
+      comment:'Desktop application with Embarcadero Rad Studio: UI design and programing (DevExpress), FireDAC , Reporting(Fast-report VCL)',
       class:'none',
       color:'redrad'
     },
@@ -38,14 +38,14 @@ export class DataService {
       technologieName: 'Delphi',
       years: 6,
       imageLink: 'assets/images/delphi-icon.png',
-      comment:'Desktop application with Embarcadero Rad Studio: UI design and programing (DevExpress), Fire Base , Reporting(Fast-report VCL)',
+      comment:'Desktop application with Embarcadero Rad Studio: UI design and programing (DevExpress), FireDAC , Reporting(Fast-report VCL)',
       class:'none',
       color:'redrad'
     },
     {
-      technologieName: 'Elctron JS',
+      technologieName: 'Electron JS',
       years: 1,
-      imageLink: 'assets/images/electronjs.png',
+      imageLink: 'assets/images/ElectronJS.png',
       comment:'Desktop applications',
       class:'none',
       color:'gray'
@@ -117,7 +117,7 @@ export class DataService {
         imageLink: 'assets/images/',
         comment:'Front-End Web application',
         class:'fa-css3-alt',
-        color:'gold'
+        color:'blue'
       },
  
       {
@@ -169,7 +169,7 @@ Projects = [
     Name: 'Stock management application',
     company:'material service - Municipality of Sidi Khaled - Biskra',
     period: '2018',
-    Effort: '2 months with improvements to date',
+    Effort: '2 years with improvements to date',
     Technological:['Windows Server', 'Windows 7', 'MS Sql-server','Rad Studio 10.2', 'Delphi', 'Fast Report VCL 5','DevExpress'],
     imageLink: ['assets/images/projects/stocke/0.JPG',
                'assets/images/projects/stocke/1.JPG',
@@ -178,7 +178,17 @@ Projects = [
                'assets/images/projects/stocke/5.JPG',
                'assets/images/projects/stocke/6.JPG',
                'assets/images/projects/stocke/7.JPG',
-               'assets/images/projects/stocke/4.JPG',],
+               'assets/images/projects/stocke/8.JPG',
+               'assets/images/projects/stocke/9.JPG',
+               'assets/images/projects/stocke/10.JPG',
+               'assets/images/projects/stocke/11.JPG',
+               'assets/images/projects/stocke/12.JPG',
+               'assets/images/projects/stocke/13.JPG',
+               'assets/images/projects/stocke/14.JPG',
+               'assets/images/projects/stocke/15.JPG',
+               'assets/images/projects/stocke/16.JPG',
+               'assets/images/projects/stocke/17.JPG',
+               'assets/images/projects/stocke/18.JPG',],
     description: 'Control and record all operations carried out on the stock of products such as invoicing, delivery, stock cards, using a barcode reader and a printer for tickets and barcodes',
     link:'none',
   },
@@ -242,7 +252,7 @@ Projects = [
     'assets/images/projects/sexp/14.JPG',
     'assets/images/projects/sexp/15.PNG',
     'assets/images/projects/sexp/16.PNG',  ],
-    description: 'Implementation of an expert system (rule base + fact base, inference engine) which automatically translates civil status databases (birth, marriage, decree) from the Arabic language to the French language.',
+    description: 'Implementation of an expert system (rule base + fact base) which automatically translates the fields of Civil Status databases (birth, marriage, death) from Arabic to French. ',
     link:'none',
   },            
 

@@ -74,9 +74,10 @@ $monospace: Consolas, "Lucida Console",  monospace;
 
 .card {
 	position: relative;
-	width: 100%;
-	height: 20%;
-	min-height: 150px;
+	width: 70%;
+	left: 10%;
+	height: 120px;
+	min-height: 100px;
 	padding: 5px;
 	margin: 5px;
 	perspective: 150rem;
@@ -87,7 +88,7 @@ $monospace: Consolas, "Lucida Console",  monospace;
 	&-front,
 	&-back {
 		position: absolute;
-		width: 100%;
+		width: 70%;
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -123,7 +124,7 @@ $monospace: Consolas, "Lucida Console",  monospace;
 		}
 	}
 	&-front {
-		width: 100%;
+		width: 70%;
 		height: 100%;
 		background: linear-gradient(45deg, $black-dark, $black-light);
 		&:after {
@@ -201,8 +202,8 @@ $monospace: Consolas, "Lucida Console",  monospace;
   .badge {
 	position: relative;
 	
-	  width: 128px;
-	  height: 128px;
+	  width: 80px;
+	  height: 80px;
 	  border-radius: 20%;
   
 	  top: 0;
@@ -221,7 +222,7 @@ $monospace: Consolas, "Lucida Console",  monospace;
 	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
 	
 	i.fab {
-	  font-size: 7em;
+	  font-size: 4em;
 		  margin:3%;
 	}
   }
