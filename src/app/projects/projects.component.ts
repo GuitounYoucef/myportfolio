@@ -30,6 +30,7 @@ export class ProjectsComponent implements OnInit {
   @Input() image1position: any;
   num = 10;
   Projects:any[];
+  WebProjects:any[];
   w: number;
   imgpositionFixed = false;
   statusCollapse = 'collapse-active';
@@ -43,6 +44,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.Projects=this.Skillsdata.getProjects();
+    this.WebProjects=this.Skillsdata.getWebProjects();
     
 
 

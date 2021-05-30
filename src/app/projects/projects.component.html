@@ -26,7 +26,7 @@ left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
       style="top: 0px; padding: 120px 20px 40px 20px ; position: absolute;  height: auto; background-color:rgba(0,0,0,.5); min-height: 100vh; ">
       <!--------------------------------------------------------------------------------------------------------------------------->
       <h4 style=" color: white; padding-bottom: 20px;  margin: auto;  padding-left:20px ;">Desktop Applications</h4>
-      <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="10">
+      <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="Projects.length">
         <div fxFlex="48%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
           *ngFor="let p of Projects; let i = index">
           <!-- -------------------------------------------------------- -->
@@ -45,23 +45,23 @@ left: 0; top: 0px; display: flex;    " muted loop autoplay></video>
           </div>
           <!-- -------------------------------------------------------- -->
         </div>
-      </div>
+      </div> <br>
             <!--------------------------------------------------------------------------------------------------------------------------->
             <h4 style=" color: white; padding-bottom: 20px; padding-top: 40px; margin: auto;  padding-left:20px ;">Web Applications</h4>
-            <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="10">
+            <div fxLayout="row wrap" fxLayoutGap="20px grid" style=" align-content: center; " [@listAnimation]="WebProjects.length" >
               <div fxFlex="48%" fxFlex.md="45%" fxFlex.sm="90%" fxFlex.xs="90%"
-                *ngFor="let p of Projects; let i = index">
+                *ngFor="let w of WebProjects;let i = index">
                 <!-- -------------------------------------------------------- -->
-                <div class="card" *ngIf="p.type=== 'web'">
-                  <img [src]="p.imageLink[0]" alt="">
+                <div class="card" *ngIf="w.type=== 'web'">
+                  <img [src]="w.imageLink[0]" alt="">
                   <div class="descriptions">
-                    <h5>{{p.Name}} ({{p.period}})</h5>
+                    <h5>{{w.Name}} ({{w.period}})</h5>
                     <p>
-                      {{p.description}}
+                      {{w.description}}
                     </p>
-                    <a [href]="p.link" target="_blank" *ngIf="p.link!='none'" >Source Code</a> <br><br>
+                    <a [href]="w.link" target="_blank" *ngIf="w.link!='none'" >Source Code</a> <br><br>
 
-                    <button type="button" class="btn btn-dark" (click)="openProject(p.id)" >Detail</button>
+                    <button type="button" class="btn btn-dark" (click)="openProject(w.id)" >Detail</button>
                   </div>
                 </div>
                 <!-- -------------------------------------------------------- -->

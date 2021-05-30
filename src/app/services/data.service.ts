@@ -14,7 +14,7 @@ export class DataService {
       technologieName: 'C language',
       years: 3,
       imageLink: 'assets/images/c-programming.png',
-      comment:'Operating systeme(Linux): kernel, process management, memory management,video memory, drivers',
+      comment:'Operating systeme(Linux): kernel, process management, memory management,video memory, device drivers',
       class:'none',
       color:'bluec'
     },
@@ -164,7 +164,7 @@ export class DataService {
 //************************************************************************************************************************************** */   
 Projects = [
   {
-    id:1,
+    id:0,
     type:'desktop',
     Name: 'Stock management application',
     company:'material service - Municipality of Sidi Khaled - Biskra',
@@ -188,12 +188,14 @@ Projects = [
                'assets/images/projects/stocke/15.JPG',
                'assets/images/projects/stocke/16.JPG',
                'assets/images/projects/stocke/17.JPG',
-               'assets/images/projects/stocke/18.JPG',],
-    description: 'Control and record all operations carried out on the stock of products such as invoicing, delivery, stock cards, using a barcode reader and a printer for tickets and barcodes',
+               'assets/images/projects/stocke/18.JPG', 
+               'assets/images/projects/stocke/19.JPG',],
+               
+    description: 'this application allows entry and control of all operations carried out on the stock of products, such as invoicing, delivery of products, stock cards, use of the barcode reader and configuration of the printer dedicated to printing tickets and codes bars I have personalized this application for the management of the stock of different points of sale ',
     link:'none',
   },
   {
-    id:2,
+    id:1,
     type:'desktop',
     Name: 'Revision of the electoral list',
     company:'material service - Municipality of Sidi Khaled - Biskra',
@@ -210,7 +212,7 @@ Projects = [
     link:'none',
   },
   {
-    id:3,
+    id:2,
     type:'desktop',
     Name: 'Digitalization of vehicle sales contract',
     company:'material service - Municipality of Sidi Khaled - Biskra',
@@ -228,7 +230,7 @@ Projects = [
     link:'none',
   },
   {
-    id:4,
+    id:3,
     type:'desktop',
     Name: 'Expert system - civil status',
     company:'material service - Municipality of Sidi Khaled - Biskra',
@@ -251,13 +253,49 @@ Projects = [
     'assets/images/projects/sexp/13.JPG',
     'assets/images/projects/sexp/14.JPG',
     'assets/images/projects/sexp/15.PNG',
-    'assets/images/projects/sexp/16.PNG',  ],
+    'assets/images/projects/sexp/16.PNG',
+    'assets/images/projects/sexp/17.JPG', 
+    'assets/images/projects/sexp/18.JPG', 
+    'assets/images/projects/sexp/19.JPG', 
+    'assets/images/projects/sexp/20.JPG', 
+    'assets/images/projects/sexp/21.JPG', 
+    'assets/images/projects/sexp/22.JPG',   ],
     description: 'Implementation of an expert system (rule base + fact base) which automatically translates the fields of Civil Status databases (birth, marriage, death) from Arabic to French. ',
     link:'none',
-  },            
+  }, 
+  
+  // {
+  //   id:4,
+  //   type:'desktop',
+  //   Name: 'implementation of protocol RFB',
+  //   company:'final project of engineer degree',
+  //   period: '2010',
+  //   Effort: '6 months',
+  //   Technological:['Linux Debian 5.0.0',  'C language', 'C++ ', 'Qt3','linux configure kernel','linux compiling kernel','distributed applications'],
+  //   imageLink: ['assets/images/projects/rfb/0.png',
+  //   'assets/images/projects/rfb/1.JPG',
+  //   'assets/images/projects/rfb/2.JPG',
+  //   'assets/images/projects/rfb/3.JPG',
+  //   'assets/images/projects/rfb/4.JPG',
+  //   'assets/images/projects/rfb/5.jpg', 
+  //   'assets/images/projects/rfb/6.JPG',
+  //   'assets/images/projects/rfb/7.JPG', 
+  //   'assets/images/projects/rfb/8.JPG', 
+  //   'assets/images/projects/rfb/9.JPG', 
+  //   'assets/images/projects/rfb/10.JPG', 
+  //   'assets/images/projects/rfb/11.JPG', 
+  //   'assets/images/projects/rfb/12.JPG',   ],
+  //   description: 'This application is built around a protocol called remote frame buffer (RFB). To access to the remote machine with this protocol, all you have to do is enter the IP address of this machine and his screen will be displayed on your machine. Once the display is established, we can operate the remote machine using the keyboard and mouse.',
+  //   link:'none',
+  // }, 
 
+
+
+];
+
+WebProject=[
   {
-    id:5,
+    id:1,
     type:'web',
     Name: 'Blog Post (Ckeditor5)',
     company:'personal work',
@@ -280,23 +318,9 @@ Projects = [
     'assets/images/projects/blog/13.JPG', 
     'assets/images/projects/blog/14.JPG',    ],
     description: 'fullstack bolg post with angular, ckeditor in front-end and spring boot api in back-end',
-    link:'https://github.com/GuitounYoucef/AngularSrpingBootBlog',
-    
+    link:'https://github.com/GuitounYoucef/AngularSrpingBootBlog',  
   },
-/*   {
-    id:6,
-    type:'web',
-    Name: 'This portfolio',
-    company:'personal work',
-    period: '2021',
-    Effort: '21 days',
-    Technological:['Angular',  'Html','Css','Scss','Typescript','Bootstrap','MDB5','Animation'],
-    imageLink: ['assets/images/projects/portfolio/portfolio.JPG', ],
-    description: 'front-end mini web application with angular',
-    link:'https://github.com/GuitounYoucef/portfolio/tree/master',
-  }, */
 ]
-
 
 //******************************************************************************************* */
   projectdetailName:string;
@@ -317,6 +341,10 @@ Projects = [
   getProjects():any
   {
     return this.Projects;
+  }
+  getWebProjects():any
+  {
+    return this.WebProject;
   }
   getPojectByName(id:number): any{
     
