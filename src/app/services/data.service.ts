@@ -264,30 +264,30 @@ Projects = [
     link:'none',
   }, 
   
-  // {
-  //   id:4,
-  //   type:'desktop',
-  //   Name: 'implementation of protocol RFB',
-  //   company:'final project of engineer degree',
-  //   period: '2010',
-  //   Effort: '6 months',
-  //   Technological:['Linux Debian 5.0.0',  'C language', 'C++ ', 'Qt3','linux configure kernel','linux compiling kernel','distributed applications'],
-  //   imageLink: ['assets/images/projects/rfb/0.png',
-  //   'assets/images/projects/rfb/1.JPG',
-  //   'assets/images/projects/rfb/2.JPG',
-  //   'assets/images/projects/rfb/3.JPG',
-  //   'assets/images/projects/rfb/4.JPG',
-  //   'assets/images/projects/rfb/5.jpg', 
-  //   'assets/images/projects/rfb/6.JPG',
-  //   'assets/images/projects/rfb/7.JPG', 
-  //   'assets/images/projects/rfb/8.JPG', 
-  //   'assets/images/projects/rfb/9.JPG', 
-  //   'assets/images/projects/rfb/10.JPG', 
-  //   'assets/images/projects/rfb/11.JPG', 
-  //   'assets/images/projects/rfb/12.JPG',   ],
-  //   description: 'This application is built around a protocol called remote frame buffer (RFB). To access to the remote machine with this protocol, all you have to do is enter the IP address of this machine and his screen will be displayed on your machine. Once the display is established, we can operate the remote machine using the keyboard and mouse.',
-  //   link:'none',
-  // }, 
+  {
+    id:4,
+    type:'desktop',
+    Name: 'implementation of protocol RFB',
+    company:'final project of engineer degree',
+    period: '2010',
+    Effort: '6 months',
+    Technological:['Linux Debian 5.0.0',  'C language', 'C++ ', 'Qt3','linux configure kernel','linux compiling kernel','distributed applications'],
+    imageLink: ['assets/images/projects/rfb/0.png',
+    'assets/images/projects/rfb/1.JPG',
+    'assets/images/projects/rfb/2.JPG',
+    'assets/images/projects/rfb/3.JPG',
+    'assets/images/projects/rfb/4.JPG',
+    'assets/images/projects/rfb/5.jpg', 
+    'assets/images/projects/rfb/6.JPG',
+    'assets/images/projects/rfb/7.JPG', 
+    'assets/images/projects/rfb/8.JPG', 
+    'assets/images/projects/rfb/9.JPG', 
+    'assets/images/projects/rfb/10.JPG', 
+    'assets/images/projects/rfb/11.JPG', 
+    'assets/images/projects/rfb/12.JPG',   ],
+    description: 'This application is built around a protocol called remote frame buffer (RFB). To access to the remote machine with this protocol, all you have to do is enter the IP address of this machine and his screen will be displayed on your machine. Once the display is established, we can operate the remote machine using the keyboard and mouse.',
+    link:'none',
+  }, 
 
 
 
@@ -295,13 +295,13 @@ Projects = [
 
 WebProject=[
   {
-    id:1,
+    id:5,
     type:'web',
     Name: 'Blog Post (Ckeditor5)',
     company:'personal work',
     period: '2020',
     Effort: '1 months with improvements to date',
-    Technological:['Mysql','Angular', 'Java Spring boot', 'Html','Css','Ckeditor5','Typescript','Bootstrap'],
+    Technological:['Mysql','Angular', 'Java Spring boot','Java Spring Security', 'Html','Css','Ckeditor5','Typescript','Bootstrap'],
     imageLink: ['assets/images/projects/blog/0.JPG',
     'assets/images/projects/blog/1.JPG',
     'assets/images/projects/blog/2.JPG',
@@ -348,8 +348,9 @@ WebProject=[
   }
   getPojectByName(id:number): any{
     
- 
+    if (this.Projects.find(p => p.id===id))
     return this.Projects.find(p => p.id===id);  
+    else return this.WebProject.find(p => p.id===id);  
   }
 
 }
